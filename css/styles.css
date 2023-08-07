@@ -1,4 +1,7 @@
 /* this a comment tag in css */
+html {
+  scroll-behavior: smooth;
+}
 body {
     background-color: lightblue;
   }
@@ -23,10 +26,10 @@ body {
     background-color: white;
     font-size: 25px;
   }
-  menu {
+  .menu {
     text-align: center;
-    margin: 10%;
-    font-size: 100px;
+    align-items: center;
+ 
   }
   
   ul {
@@ -113,6 +116,11 @@ body {
       display: grid;
       grid-template-rows:  max-content 1fr 1fr;
     }
+    @media only screen and  (max-width: 600px) {
+      .element {
+        flex-direction: column;
+      }
+    }
    
  .footer { 
     color: white;
@@ -122,8 +130,4 @@ body {
     height: 150px;
     padding: 5%;
     }
-    @media only screen and  (max-width: 600px) {
-      .element {
-        flex-direction: column;
-      }
-    }
+   
